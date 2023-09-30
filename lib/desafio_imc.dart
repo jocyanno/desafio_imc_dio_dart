@@ -7,6 +7,7 @@ void main() {
     Pessoa pessoa = preencherDadosPessoa();
     double imc = pessoa.calcularIMC();
 
+    print('\nResultado do IMC para ${pessoa.getNome()}: $imc');
   } catch (e) {
     print('Erro: $e');
   }

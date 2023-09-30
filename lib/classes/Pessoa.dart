@@ -8,7 +8,7 @@ class Pessoa {
     _peso = peso;
     _altura = altura;
 
-    if (altura != null && altura <= 0) {
+    if (_altura != null && _altura! <= 0) {
       throw Exception("Altura deve ser maior que zero.");
     }
   }
@@ -19,5 +19,17 @@ class Pessoa {
     } else {
       throw Exception("Dados inválidos para calcular o IMC. Certifique-se de que peso e altura são valores válidos.");
     }
+  }
+
+  String? getNome() {
+    return _nome;
+  }
+
+  double? getPeso() {
+    return _peso;
+  }
+
+  double? getAltura() {
+    return _altura;
   }
 }
